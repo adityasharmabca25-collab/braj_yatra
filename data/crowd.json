@@ -1,0 +1,189 @@
+[
+  {
+    "id": "bankebihari",
+    "name": "Shri Banke Bihari Temple",
+    "town": "Vrindavan",
+    "waitTimeMin": 45,
+    "status": "High Rush",
+    "statusColor": "red",
+    "nextEvent": "Shringar Darshan (10:15 AM)",
+    "recommendation": "Hold phones and spectacles safely from monkeys.",
+    "footfallToday": 38400
+  },
+  {
+    "id": "premmandir",
+    "name": "Prem Mandir",
+    "town": "Vrindavan",
+    "waitTimeMin": 20,
+    "status": "Moderate",
+    "statusColor": "amber",
+    "nextEvent": "Musical Fountain & Light Show (7:30 PM)",
+    "recommendation": "Arrive 45 mins before fountain show.",
+    "footfallToday": 29500
+  },
+  {
+    "id": "janmabhoomi",
+    "name": "Krishna Janmabhoomi Complex",
+    "town": "Mathura",
+    "waitTimeMin": 25,
+    "status": "Moderate",
+    "statusColor": "amber",
+    "nextEvent": "Midday Bhog Aarti (11:30 AM)",
+    "recommendation": "Use dedicated cloakroom for smart devices.",
+    "footfallToday": 24100
+  },
+  {
+    "id": "dwarkadhish",
+    "name": "Shri Dwarkadhish Temple",
+    "town": "Mathura",
+    "waitTimeMin": 20,
+    "status": "Moderate",
+    "statusColor": "amber",
+    "nextEvent": "Evening Rajbhog Darshan (5:30 PM)",
+    "recommendation": "Park at Asikund or take e-rickshaw to temple gate.",
+    "footfallToday": 18400
+  },
+  {
+    "id": "iskconvrindavan",
+    "name": "ISKCON Krishna Balaram",
+    "town": "Vrindavan",
+    "waitTimeMin": 15,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Evening Sandhya Aarti (7:00 PM)",
+    "recommendation": "Visit Govinda restaurant and Prabhupada Samadhi.",
+    "footfallToday": 16200
+  },
+  {
+    "id": "nidhivan",
+    "name": "Nidhivan Sacred Grove",
+    "town": "Vrindavan",
+    "waitTimeMin": 20,
+    "status": "Moderate",
+    "statusColor": "amber",
+    "nextEvent": "Afternoon Darshan (4:00 PM)",
+    "recommendation": "Vacate strictly before sundown; secure spectacles.",
+    "footfallToday": 19800
+  },
+  {
+    "id": "radharaman",
+    "name": "Shri Radha Raman Temple",
+    "town": "Vrindavan",
+    "waitTimeMin": 15,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Sandhya Shringar (6:30 PM)",
+    "recommendation": "Traditional dress appreciated in the inner courtyard.",
+    "footfallToday": 14200
+  },
+  {
+    "id": "vishram",
+    "name": "Vishram Ghat & Yamuna Aarti",
+    "town": "Mathura",
+    "waitTimeMin": 10,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Yamuna Maha Aarti (7:00 PM)",
+    "recommendation": "Ideal sunset boat ride window 5:30 - 6:30 PM.",
+    "footfallToday": 15600
+  },
+  {
+    "id": "radharani",
+    "name": "Shri Radha Rani Temple (Shriji)",
+    "town": "Barsana",
+    "waitTimeMin": 30,
+    "status": "Moderate",
+    "statusColor": "amber",
+    "nextEvent": "Rajbhog Aarti (12:00 PM)",
+    "recommendation": "Ropeway service is operational for seniors.",
+    "footfallToday": 18700
+  },
+  {
+    "id": "rangeelimahal",
+    "name": "Rangeeli Mahal & Kirti Mandir",
+    "town": "Barsana",
+    "waitTimeMin": 15,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Evening Illuminated Darshan (6:00 PM)",
+    "recommendation": "Ample car parking available on outer ring road.",
+    "footfallToday": 13500
+  },
+  {
+    "id": "ramanreti",
+    "name": "Raman Reti Sacred Sands",
+    "town": "Gokul",
+    "waitTimeMin": 10,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Deer Sanctuary & Sand Parikrama",
+    "recommendation": "Walk barefoot on the holy soft sands.",
+    "footfallToday": 12400
+  },
+  {
+    "id": "chaurasikhamba",
+    "name": "Chaurasi Khamba (84 Pillars)",
+    "town": "Gokul",
+    "waitTimeMin": 10,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Palace Sanctum Darshan",
+    "recommendation": "Visit nearby Brahmand Ghat within 10 mins.",
+    "footfallToday": 8900
+  },
+  {
+    "id": "brahmandghat",
+    "name": "Brahmand Ghat",
+    "town": "Gokul",
+    "waitTimeMin": 10,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Yamuna Sandhya Aarti (6:30 PM)",
+    "recommendation": "Collect blessed sacred earth (Mridika).",
+    "footfallToday": 10200
+  },
+  {
+    "id": "giriraj",
+    "name": "Govardhan Hill (Giriraj Parikrama)",
+    "town": "Govardhan",
+    "waitTimeMin": 10,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Continuous 24-hr Parikrama",
+    "recommendation": "Golf carts & e-rickshaws available at Daan Ghati.",
+    "footfallToday": 23100
+  },
+  {
+    "id": "danghati",
+    "name": "Shri Daan Ghati Mandir",
+    "town": "Govardhan",
+    "waitTimeMin": 20,
+    "status": "Moderate",
+    "statusColor": "amber",
+    "nextEvent": "Dudh Abhishek Darshan",
+    "recommendation": "Purchase authenticated pure cow milk at verified stalls.",
+    "footfallToday": 21500
+  },
+  {
+    "id": "kusumsarovar",
+    "name": "Kusum Sarovar",
+    "town": "Govardhan",
+    "waitTimeMin": 5,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Sunset Heritage Chhatri View (6:00 PM)",
+    "recommendation": "Best time for photography is late afternoon golden hour.",
+    "footfallToday": 11200
+  },
+  {
+    "id": "radhakund",
+    "name": "Radha Kund & Shyam Kund",
+    "town": "Govardhan",
+    "waitTimeMin": 15,
+    "status": "Smooth",
+    "statusColor": "green",
+    "nextEvent": "Sangam Snan & Evening Aarti",
+    "recommendation": "Footwear strictly deposited at outer entrance.",
+    "footfallToday": 17300
+  }
+]

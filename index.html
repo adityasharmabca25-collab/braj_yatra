@@ -1,0 +1,1132 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Braj Yatra • Divine Pilgrimage Planner & Smart Darshan Guide</title>
+    <meta name="description"
+        content="Plan your sacred pilgrimage across Mathura, Vrindavan, Govardhan, Gokul, and Barsana. Live temple crowd radar, smart itinerary builder, and digital Yatra e-pass.">
+    <meta name="theme-color" content="#0B132B">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Outfit:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Yatra+One&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        (function() {
+            try {
+                if (localStorage.getItem("by_auth_user")) {
+                    document.documentElement.classList.add("user-is-logged-in");
+                }
+            } catch(e) {}
+        })();
+    </script>
+</head>
+
+<body>
+    <!-- Top Telemetry & Ribbon Bar -->
+    <div class="top-ribbon" id="topRibbon">
+        <div class="wrap ribbon-inner">
+            <div class="ribbon-left">
+                <span class="pulse-indicator"></span>
+                <span class="ribbon-item" id="weatherTicker">☀️ 27°C Mathura-Vrindavan • Yamuna Flow: Calm & Safe</span>
+              
+            </div>
+            <div class="ribbon-right">
+                <span class="ribbon-helpline">📞 Helpline: <strong>7017828518</strong></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <header class="bar">
+        <div class="wrap bar-in">
+            <a class="brand" href="#top" id="brandLogo">
+                <span class="brand-icon">🛕</span>
+                <span class="brand-text">
+                    <span class="brand-title">Braj <span>Yatra</span></span>
+                </span>
+            </a>
+
+            <nav aria-label="Main Navigation" class="nav-links">
+                <a href="#places" id="navPlaces">Places</a>
+                <a href="#crowd" id="navCrowd">Live Crowd Radar</a>
+                <a href="#circuit-map" id="navMap">Circuit Map</a>
+                <a href="#planner" id="navPlanner">Trip Builder</a>
+                <a href="#yatra-pass" id="navPass">Digital E-Pass</a>
+                <a href="#season" id="navSeason">When to Go</a>
+                <a href="#reviews" id="navReviews">Devotee Reviews</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn btn-sm btn-outline-gold payment-header-btn" id="headerPaymentBtn" type="button">
+                    <span class="btn-icon">💳</span> <span>Pay / Seva</span>
+                </button>
+                <!-- If Not Logged In: Only show Login Option -->
+                <button class="btn btn-sm btn-ghost login-header-btn" id="headerLoginBtn" type="button">
+                    <span class="btn-icon">👤</span> <span id="loginBtnLabel">Yatri Login</span>
+                </button>
+
+                <!-- If Already Logged In: Only show User Greeting & Logout Option (No Login option) -->
+                <div class="user-logged-in-wrap" id="userLoggedInWrap" hidden>
+                    <button type="button" class="user-pill glass-panel clickable-user-pill" id="userHeaderPill" title="Click to view Devotee Profile details">
+                        <span class="user-avatar-badge">🙏</span>
+                        <span class="user-greeting" id="userGreetingName">Devotee</span>
+                        <span class="pill-arrow">▾</span>
+                    </button>
+                   
+                </div>
+                <button class="theme-btn" id="themeBtn" type="button" aria-label="Toggle theme">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <a href="#planner" class="btn btn-sm btn-primary header-cta" id="headerCtaBtn">Plan Trip</a>
+                <button class="menu-btn" id="menuBtn" aria-label="Toggle mobile menu">☰</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <nav class="mobile-nav">
+            <button type="button" class="mobile-pay-btn" id="mobilePaymentBtn">💳 Pay Seva & VIP Pass (UPI)</button>
+            <!-- If Not Logged In: Only show Login Option -->
+            <button type="button" class="mobile-login-btn" id="mobileLoginBtn">👤 Yatri Login</button>
+
+            <!-- If Already Logged In: Show Profile & Logout Options (No Login option) -->
+            <button type="button" class="mobile-profile-btn" id="mobileProfileBtn" hidden>
+                <span>👤 My Profile Details</span>
+                <span class="mobile-user-tag" id="mobileUserGreeting">🙏 Devotee</span>
+            </button>
+            <button type="button" class="mobile-logout-btn" id="mobileLogoutBtn" hidden>
+                <span>🚪 Logout</span>
+            </button>
+            <a href="#places" class="mobile-nav-link">🛕 Sacred Places</a>
+            <a href="#crowd" class="mobile-nav-link">⏱️ Live Crowd Radar</a>
+            <a href="#circuit-map" class="mobile-nav-link">🗺️ Circuit Map</a>
+            <a href="#planner" class="mobile-nav-link">🧭 Trip Planner</a>
+            <a href="#yatra-pass" class="mobile-nav-link">🎫 Digital Yatra Pass</a>
+            <a href="#season" class="mobile-nav-link">📅 Festivals & Weather</a>
+            <a href="#local" class="mobile-nav-link">🥘 Food & Tips</a>
+            <a href="#reviews" class="mobile-nav-link">💬 Devotee Reviews</a>
+        </nav>
+    </div>
+
+    <main class="wrap" id="top">
+        <!-- Hero Section with Divine Aesthetics -->
+        <section class="hero-section">
+            <div class="hero-bg-overlay"></div>
+            <div class="hero-content">
+                <div class="hero-text-block">
+                    <div class="divine-tag">
+                        <span class="om-symbol">ॐ</span>
+                        
+                    </div>
+                    <h1 id="heroHeading">
+                        Experience the Divine Soul of <em>Braj</em> with us.
+                    </h1>
+                    <p class="hero-lede" id="heroSubtitle">
+                        Plan your pilgrimage across Mathura, Vrindavan, Govardhan, Gokul, and Barsana. Get synchronized
+                        darshan timings, real-time crowd status, optimized transit routes, and verified Digital Yatra Passes.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a class="btn btn-primary btn-glow" href="#planner" id="heroBuildBtn">
+                            <span class="btn-icon">✨</span> Build My Divine Plan
+                        </a>
+                        <a class="btn btn-ghost" href="#yatra-pass" id="heroPassBtn">
+                            <span class="btn-icon">🎫</span> Get Digital Yatra Pass
+                        </a>
+                        <button class="btn btn-glass" id="openAiChatBtn" type="button">
+                            <span class="btn-icon">🤖</span> Ask Braj Sarthi AI
+                        </button>
+                    </div>
+
+                    <!-- Distance chips -->
+                    <div class="circuit-distances">
+                        <span class="dist-label">Distances from Mathura Junction:</span>
+                        <div class="dist-chips">
+                            <span class="dist-chip" data-town="Vrindavan">Vrindavan <strong>12 km</strong></span>
+                            <span class="dist-chip" data-town="Gokul">Gokul <strong>15 km</strong></span>
+                            <span class="dist-chip" data-town="Govardhan">Govardhan <strong>22 km</strong></span>
+                            <span class="dist-chip" data-town="Barsana">Barsana <strong>50 km</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Live Pilgrim Dashboard Card -->
+                <div class="hero-card glass-panel">
+                    <div class="hero-card-header">
+                        <span class="live-pill"><span class="blink-dot"></span> Live Telemetry</span>
+                        <span class="card-timestamp" id="heroCardTime">Just now</span>
+                    </div>
+                    <div class="hero-stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-number" id="statPlacesCount">55+</span>
+                            <span class="stat-label">Sacred Sites</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">18,500+</span>
+                            <span class="stat-label">Devotees Today</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number">21 km</span>
+                            <span class="stat-label">Govardhan Marg</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-number" id="statAiStatus">Active</span>
+                            <span class="stat-label">AI Sarthi Bot</span>
+                        </div>
+                    </div>
+                    <div class="quick-advisory-box">
+                        <div class="advisory-title">📢 Today's Pilgrimage Advisory:</div>
+                        <p class="advisory-desc" id="heroAdvisoryText">
+                            Banke Bihari temple witnesses high rush between 8:30 AM & 11:30 AM. Evening Yamuna Aarti at
+                            Vishram Ghat starts at 7:00 PM. Please leave bags in vehicle.
+                        </p>
+                    </div>
+                    <div class="card-footer-action">
+                        <a href="#crowd" class="text-link">View Live Crowd Radar &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Crowd Radar & Darshan Status -->
+        <section id="crowd" class="section-container">
+            <div class="sec-head">
+                <div class="badge-head">
+                    <span class="pulse-indicator"></span> Real-Time Sensor Telemetry
+                </div>
+                <h2>Live Darshan & Crowd Radar</h2>
+                <p>
+                    Check wait times, upcoming aarti schedules, and peak rush warnings before you head to the sanctum.
+                    Data synced directly with local temple flow monitors.
+                </p>
+            </div>
+
+            <div class="radar-controls">
+                <span class="radar-status-note">Status as of: <strong id="radarTimestamp">Live</strong></span>
+                <button type="button" class="btn btn-sm btn-ghost" id="refreshRadarBtn">
+                    <span class="refresh-icon">🔄</span> Refresh Telemetry
+                </button>
+            </div>
+
+            <div class="crowd-grid" id="crowdGrid">
+                <!-- Dynamically loaded from /api/crowd-radar -->
+                <div class="loading-spinner">Connecting to temple telemetry sensors...</div>
+            </div>
+        </section>
+
+        <!-- Interactive Braj Mandala Circuit Map -->
+        <section id="circuit-map" class="section-container">
+            <div class="sec-head">
+                <p class="eyebrow">Interactive Sacred Geography</p>
+                <h2>The Braj Mandala Circuit</h2>
+                <p>
+                    Understand how the sacred towns connect along the sacred Yamuna river. Click on any town node to
+                    filter sites and estimate travel time.
+                </p>
+            </div>
+
+            <div class="map-circuit-wrapper glass-panel">
+                <div class="map-nodes-container">
+                    <div class="map-node active" data-town="All">
+                        <div class="node-icon">✨</div>
+                        <div class="node-name">All Braj</div>
+                        <div class="node-sub">Complete Circuit</div>
+                    </div>
+                    <div class="map-arrow">&rarr;</div>
+                    <div class="map-node" data-town="Mathura">
+                        <div class="node-icon">🛕</div>
+                        <div class="node-name">Mathura</div>
+                        <div class="node-sub">Birthplace & Ghats</div>
+                    </div>
+                    <div class="map-arrow">&rarr;</div>
+                    <div class="map-node" data-town="Vrindavan">
+                        <div class="node-icon">🌸</div>
+                        <div class="node-name">Vrindavan</div>
+                        <div class="node-sub">12 km • 5000+ Temples</div>
+                    </div>
+                    <div class="map-arrow">&rarr;</div>
+                    <div class="map-node" data-town="Gokul">
+                        <div class="node-icon">🌿</div>
+                        <div class="node-name">Gokul</div>
+                        <div class="node-sub">15 km • Raman Reti</div>
+                    </div>
+                    <div class="map-arrow">&rarr;</div>
+                    <div class="map-node" data-town="Govardhan">
+                        <div class="node-icon">⛰️</div>
+                        <div class="node-name">Govardhan</div>
+                        <div class="node-sub">22 km • 21 km Parikrama</div>
+                    </div>
+                    <div class="map-arrow">&rarr;</div>
+                    <div class="map-node" data-town="Barsana">
+                        <div class="node-icon">👑</div>
+                        <div class="node-name">Barsana</div>
+                        <div class="node-sub">50 km • Radha Rani Palace</div>
+                    </div>
+                </div>
+
+                <div class="map-info-banner" id="mapTownInfo">
+                    <div class="banner-stat">
+                        <span class="label">Total Circuit Distance</span>
+                        <span class="value">~145 km Roundtrip</span>
+                    </div>
+                    <div class="banner-stat">
+                        <span class="label">Recommended Duration</span>
+                        <span class="value">2 to 4 Days</span>
+                    </div>
+                    <div class="banner-stat">
+                        <span class="label">Ideal Starting Base</span>
+                        <span class="value">Mathura Junction / Vrindavan</span>
+                    </div>
+                    <div class="banner-stat">
+                        <span class="label">Best Transport</span>
+                        <span class="value">E-Rickshaw (Local) + Hired Cab (Cross-Town)</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Places Explorer -->
+        <section id="places" class="section-container">
+            <div class="sec-head">
+                <p class="eyebrow">Sacred Sites Directory</p>
+                <h2>Where the Devotion Lives</h2>
+                <p>
+                    Filter by town or category. Pin any sacred place to your plan and the intelligent trip builder will
+                    seamlessly schedule it.
+                </p>
+            </div>
+
+            <!-- Search and Filter Bar -->
+            <div class="filter-bar glass-panel">
+                <div class="search-input-box">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="placeSearchInput" placeholder="Search temples, ghats, pedas, aartis, groves..."
+                        aria-label="Search places">
+                    <button type="button" id="clearSearchBtn" class="clear-btn" hidden>&times;</button>
+                </div>
+                <div class="category-pills" id="categoryPills">
+                    <button type="button" class="cat-pill active" data-cat="All">All Categories</button>
+                    <button type="button" class="cat-pill" data-cat="temples">Temples</button>
+                    <button type="button" class="cat-pill" data-cat="ghats">Ghats & River</button>
+                    <button type="button" class="cat-pill" data-cat="heritage">Heritage</button>
+                    <button type="button" class="cat-pill" data-cat="food">Braj Food</button>
+                    <button type="button" class="cat-pill" data-cat="nature">Open Air & Groves</button>
+                </div>
+            </div>
+
+            <div class="chips" id="areaChips" role="group" aria-label="Filter by town"></div>
+            
+            <div class="places-counter-row">
+                <span id="placesFoundCount">Showing all places</span>
+                <span class="pinned-count-badge" id="pinnedCountBadge">0 places pinned in trip</span>
+            </div>
+
+            <div class="grid" id="placeGrid">
+                <div class="loading-spinner">Loading sacred sites...</div>
+            </div>
+        </section>
+
+        <!-- Trip Builder with Intelligent Optimizer -->
+        <section id="planner" class="section-container">
+            <div class="sec-head">
+                <div class="badge-head">
+                    <span class="star-badge">⚡</span> Powered by Backend AI Optimizer
+                </div>
+                <h2>Your Sacred Itinerary, Optimized in Real-Time</h2>
+                <p>
+                    Adjust your days, preferred pace, mode of transit, and stay category. The backend engine sequences your
+                    stops into morning darshans, afternoon rest breaks, and evening aartis without backtracking.
+                </p>
+            </div>
+
+            <div class="planner">
+                <!-- Config Form -->
+                <form class="form glass-panel" id="form" onsubmit="return false">
+                    <div class="form-header">
+                        <h3>Trip Parameters</h3>
+                        <span class="form-sub">Instant recalculation</span>
+                    </div>
+
+                    <fieldset>
+                        <legend>Yatra Duration</legend>
+                        <div class="seg" id="segDays"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sacred Interests</legend>
+                        <div class="seg" id="segInterests"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Pilgrimage Pace</legend>
+                        <div class="seg" id="segPace"></div>
+                        <p class="hint" id="paceHint"></p>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Mode of Transit</legend>
+                        <div class="seg" id="segMode"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Accommodation Standard</legend>
+                        <div class="seg" id="segStay"></div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend><label for="group">Devotees in Group</label></legend>
+                        <div class="group-stepper">
+                            <button type="button" class="step-btn" id="decGroupBtn">-</button>
+                            <input class="num" type="number" id="group" min="1" max="15" value="2" inputmode="numeric">
+                            <button type="button" class="step-btn" id="incGroupBtn">+</button>
+                            <span class="group-label">traveller(s)</span>
+                        </div>
+                    </fieldset>
+
+                    <button type="button" class="btn btn-primary btn-block" id="triggerReplanBtn">
+                        ⚡ Recalculate Itinerary
+                    </button>
+                </form>
+
+                <!-- Planner Output -->
+                <div class="out" id="out" aria-live="polite">
+                    <div class="loading-spinner">Generating optimized divine route...</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Digital Pilgrim Yatra e-Pass Generator (Hackathon Feature) -->
+        <section id="yatra-pass" class="section-container">
+            <div class="sec-head">
+                <div class="badge-head">
+                    <span>🎫</span> Official Digital Pilgrim Pass
+                </div>
+                <h2>Digital Braj Yatra E-Pass</h2>
+                <p>
+                    Generate a verified digital pilgrimage pass with QR code verification, priority darshan slot, and
+                    emergency contacts for your group.
+                </p>
+            </div>
+
+            <div class="pass-wrapper glass-panel">
+                <div class="pass-form-col">
+                    <h3>Generate Pilgrim E-Pass</h3>
+                    <p class="form-explainer">Free government and temple tourism companion pass.</p>
+
+                    <form id="passForm" onsubmit="return false">
+                        <div class="input-group">
+                            <label for="passLeaderName">Primary Devotee / Leader Name *</label>
+                            <input type="text" id="passLeaderName" class="form-input" placeholder="e.g. Kushagr Varshney" required>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="passPhone">Mobile Number (for SMS confirmation) *</label>
+                                <input type="tel" id="passPhone" class="form-input" placeholder="+91 98765 43210" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="passDate">Date of Commencement *</label>
+                                <input type="date" id="passDate" class="form-input" required>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="passPax">Total Devotees</label>
+                                <select id="passPax" class="form-select">
+                                    <option value="1">1 Person (Solo)</option>
+                                    <option value="2" selected>2 Persons (Couple/Friends)</option>
+                                    <option value="4">4 Persons (Family)</option>
+                                    <option value="6">6 Persons (Group)</option>
+                                    <option value="10">10+ Persons (Satsang Group)</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="passSlot">Preferred Darshan Slot</label>
+                                <select id="passSlot" class="form-select">
+                                    <option value="Early Morning (06:00 AM - 09:30 AM)">Early Morning (06:00 - 09:30 AM)</option>
+                                    <option value="Morning Darshan (09:30 AM - 12:00 PM)">Morning Darshan (09:30 AM - 12:00 PM)</option>
+                                    <option value="Evening Aarti (05:00 PM - 08:30 PM)">Evening Aarti (05:00 - 08:30 PM)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block btn-glow" id="generatePassBtn">
+                            🎟️ Issue Verified Digital E-Pass
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Live Pass Preview / Ticket Render -->
+                <div class="pass-preview-col" id="passPreviewHost">
+                    <div class="ticket-card" id="digitalPassCard">
+                        <div class="ticket-top">
+                            <div class="ticket-brand">
+                                <span class="ticket-om">🛕</span>
+                                <div>
+                                    <div class="ticket-title">SHRI BRAJ YATRA E-PASS</div>
+                                    <div class="ticket-sub">Pilgrim Darshan & Ghat Transit Pass</div>
+                                </div>
+                            </div>
+                            <span class="ticket-badge" id="passStatusBadge">VERIFIED & ACTIVE</span>
+                        </div>
+
+                        <div class="ticket-body">
+                            <div class="ticket-info-grid">
+                                <div>
+                                    <div class="t-label">Pass ID</div>
+                                    <div class="t-value" id="dispPassId">BY-2026-DEMO-01</div>
+                                </div>
+                                <div>
+                                    <div class="t-label">Travel Date</div>
+                                    <div class="t-value" id="dispPassDate">18 Oct 2026</div>
+                                </div>
+                                <div>
+                                    <div class="t-label">Primary Pilgrim</div>
+                                    <div class="t-value" id="dispLeaderName">Kushagr Varshney</div>
+                                </div>
+                                <div>
+                                    <div class="t-label">Devotees</div>
+                                    <div class="t-value" id="dispPax">2 Persons</div>
+                                </div>
+                                <div>
+                                    <div class="t-label">Darshan Slot</div>
+                                    <div class="t-value" id="dispSlot">Priority Morning Darshan (07:30 AM)</div>
+                                </div>
+                                <div>
+                                    <div class="t-label">Circuit</div>
+                                    <div class="t-value">Mathura - Vrindavan - Govardhan</div>
+                                </div>
+                            </div>
+
+                            <div class="ticket-qr-section">
+                                <div class="qr-mock" id="qrCodeBox" title="Scan to Verify">
+                                    <svg viewBox="0 0 100 100" width="85" height="85">
+                                        <rect width="100" height="100" fill="#ffffff" />
+                                        <rect x="10" y="10" width="25" height="25" fill="#0E2830" />
+                                        <rect x="15" y="15" width="15" height="15" fill="#ffffff" />
+                                        <rect x="65" y="10" width="25" height="25" fill="#0E2830" />
+                                        <rect x="70" y="15" width="15" height="15" fill="#ffffff" />
+                                        <rect x="10" y="65" width="25" height="25" fill="#0E2830" />
+                                        <rect x="15" y="70" width="15" height="15" fill="#ffffff" />
+                                        <circle cx="50" cy="50" r="10" fill="#E39A0B" />
+                                        <rect x="42" y="20" width="16" height="6" fill="#0E2830" />
+                                        <rect x="42" y="74" width="16" height="6" fill="#0E2830" />
+                                        <rect x="20" y="42" width="6" height="16" fill="#0E2830" />
+                                        <rect x="74" y="42" width="6" height="16" fill="#0E2830" />
+                                    </svg>
+                                </div>
+                                <div class="qr-info">
+                                    <span class="qr-title">Instant Digital Verification</span>
+                                    <span class="qr-sub">Scan at temple entrance & ghat cloakroom counters</span>
+                                    <button type="button" class="btn btn-sm btn-ghost" id="verifyPassBtn">
+                                        Check Verification API
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ticket-footer">
+                            <div class="emergency-contacts">
+                                <span>Emergency Helpline: <strong>1800-180-5145</strong></span>
+                                <span>Police: <strong>112</strong></span>
+                            <div class="ticket-action-btns">
+                                <button type="button" class="btn btn-sm btn-outline-gold" id="ticketPayVipBtn">💳 Pay VIP Pass Fee (UPI)</button>
+                                <button type="button" class="btn btn-sm btn-primary" id="printPassBtn">🖨️ Print / Save Pass</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seasonal Calendar & Festivals -->
+        <section id="season" class="section-container">
+            <div class="sec-head">
+                <p class="eyebrow">When to Go</p>
+                <h2>Weather Dynamics & Festival Celebrations</h2>
+                <p>
+                    Braj is immersed in ecstatic festivities throughout the Hindu year. Understand the weather patterns
+                    and book accommodation well ahead for festival peaks.
+                </p>
+            </div>
+            <div class="months" id="months"></div>
+            <div class="legend">
+                <span><i class="legend-color-good"></i>Pleasant for walking & Parikrama</span>
+                <span><i class="legend-color-hot"></i>High summer heat, visit morning & night</span>
+                <span><i class="legend-color-rain"></i>Humid, monsoon swings & Jhulan Yatra</span>
+            </div>
+            <div class="fest" id="fest"></div>
+        </section>
+
+        <!-- Local Eats & Practical Tips -->
+        <section id="local" class="section-container">
+            <div class="sec-head">
+                <p class="eyebrow">Local Wisdom & Sattvic Delights</p>
+                <h2>Essential Tips for a Smooth Pilgrimage</h2>
+            </div>
+            <div class="two">
+                <div class="glass-panel info-card-col">
+                    <div class="info-card-header">
+                        <span class="info-icon">🍲</span>
+                        <h3>What to Eat in Braj</h3>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <strong>Mathura Peda</strong>
+                            <span>Dense, caramelized khoya sweet dusted with cardamom and boora sugar. Buy freshly made boxes from century-old shops near Chowk Bazaar and Holi Gate.</span>
+                        </li>
+                        <li>
+                            <strong>Kachori-Sabzi & Crisp Jalebi</strong>
+                            <span>The quintessential Braj morning breakfast. Crisp lentil kachoris broken into peppery potato gravy, followed by hot saffron jalebis.</span>
+                        </li>
+                        <li>
+                            <strong>Bedmi Puri with Pumpkin & Aloo Sabzi</strong>
+                            <span>Urad dal stuffed whole wheat puris served with tangy fenugreek-flavored pumpkin (sitaphal) curry and spiced potatoes.</span>
+                        </li>
+                        <li>
+                            <strong>Thick Churned Lassi in a Kulhad</strong>
+                            <span>Rich, cold curd lassi topped with thick malai (cream) and rabri, served in an earthen clay cup.</span>
+                        </li>
+                        <li>
+                            <strong>Strict Sattvic Rule in Vrindavan</strong>
+                            <span>All authentic eateries in Vrindavan strictly prepare food without onion or garlic. Delicious prasadam thalis are available at affordable prices.</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel info-card-col">
+                    <div class="info-card-header">
+                        <span class="info-icon">💡</span>
+                        <h3>Before You Go (Crucial Tips)</h3>
+                    </div>
+                    <ul class="list">
+                        <li>
+                            <strong>Temple Timings Pause in the Afternoon</strong>
+                            <span>Almost all major temples close between 12:30 PM and 4:30 PM for Thakurji's rest (Shayan). Schedule indoor museums or resting during these hours.</span>
+                        </li>
+                        <li>
+                            <strong>Monkey Alert in Vrindavan & Barsana</strong>
+                            <span>Monkeys are adept at snatching spectacles, sunglasses, and phones. Keep glasses inside bags and avoid using phones in crowded temple alleys.</span>
+                        </li>
+                        <li>
+                            <strong>Carry Soft Cotton Socks</strong>
+                            <span>You must walk barefoot inside temple compounds and parikrama paths. In summer and sunny afternoons, white cotton socks protect your feet from heated marble.</span>
+                        </li>
+                        <li>
+                            <strong>Strict Security at Janmabhoomi</strong>
+                            <span>Krishna Janmabhoomi does not permit phones, smartwatches, bags, or pens inside. Use the dedicated cloakroom lockers before entering queue lines.</span>
+                        </li>
+                        <li>
+                            <strong>Senior Citizen Accessibility</strong>
+                            <span>Barsana provides a ropeway service up to Radha Rani temple. Govardhan Parikrama offers 4-seater battery-operated golf carts at Dan Ghati.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Devotee Reviews & Experience Hub -->
+        <section id="reviews" class="section-container">
+            <div class="sec-head">
+                <p class="eyebrow">Community Pilgrims</p>
+                <h2>Devotee Experiences & Darshan Tips</h2>
+                <p>Read real experiences from fellow pilgrims or share your personal spiritual journey.</p>
+            </div>
+
+            <div class="reviews-wrapper">
+                <div class="reviews-grid" id="reviewsGrid">
+                    <div class="loading-spinner">Loading pilgrim experiences...</div>
+                </div>
+
+                <!-- Add Review Card -->
+                <div class="add-review-card glass-panel">
+                    <h3>Share Your Darshan Tip</h3>
+                    <p class="form-explainer">Help upcoming pilgrims with timings, parking, or food recommendations.</p>
+                    <form id="reviewForm" onsubmit="return false">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="revAuthor">Your Name</label>
+                                <input type="text" id="revAuthor" class="form-input" placeholder="e.g. Radhika Sharma" required>
+                            </div>
+                            <div class="input-group">
+                                <label for="revCity">Your City</label>
+                                <input type="text" id="revCity" class="form-input" placeholder="e.g. Lucknow">
+                            </div>
+                        </div>
+                        <div class="input-group">
+                            <label for="revPlace">Sacred Place / Experience</label>
+                            <input type="text" id="revPlace" class="form-input" placeholder="e.g. Prem Mandir Light Show">
+                        </div>
+                        <div class="input-group">
+                            <label for="revComment">Your Advice / Experience</label>
+                            <textarea id="revComment" class="form-input" rows="3" placeholder="Write your experience..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="submitReviewBtn">Post Devotee Tip</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="brand-title">Braj <span>Yatra</span></span>
+                    <p class="footer-tagline">
+                        Dedicated to pilgrims and devotees visiting the holy land of Braj Mandala. Built with love, reverence,
+                        and intelligent engineering.
+                    </p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Quick Links</h4>
+                    <a href="#places">Sacred Places</a>
+                    <a href="#crowd">Live Crowd Radar</a>
+                    <a href="#planner">Trip Builder</a>
+                    <a href="#yatra-pass">Digital E-Pass</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>Emergency Help</h4>
+                    <span>UP Tourism: 1800-180-5145</span>
+                    <span>Police: 112</span>
+                    <span>Ambulance: 108</span>
+                    <span>Mathura Rly Enquiry: 139</span>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Braj Yatra Smart Pilgrimage Platform • Planning aid only. Confirm timings locally before you travel.</span>
+                <span class="radhe-salute">जय श्री राधे कृष्ण • हरे कृष्ण 🛕</span>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Floating Braj Sarthi AI Assistant Button -->
+    <div class="floating-ai-container">
+        <button type="button" class="floating-ai-btn" id="floatingAiBtn" aria-label="Open Braj Sarthi AI Guide">
+            <span class="ai-avatar-icon">🛕</span>
+            <span class="ai-btn-text">Braj Sarthi AI</span>
+            <span class="ai-online-dot"></span>
+        </button>
+    </div>
+
+    <!-- Braj Sarthi AI Chat Drawer Modal -->
+    <div class="ai-modal-backdrop" id="aiModalBackdrop" hidden>
+        <div class="ai-modal-window glass-panel">
+            <div class="ai-modal-header">
+                <div class="ai-header-profile">
+                    <span class="ai-profile-icon">🛕</span>
+                    <div>
+                        <div class="ai-name">Braj Sarthi AI Assistant</div>
+                        <div class="ai-status-sub">🟢 Ready to guide your pilgrimage</div>
+                    </div>
+                </div>
+                <div class="ai-header-controls">
+                    <button type="button" class="btn-voice-toggle" id="voiceToggleBtn" title="Toggle audio voice response">🔊 Voice On</button>
+                    <button type="button" class="ai-close-btn" id="aiCloseBtn" aria-label="Close AI Chat">&times;</button>
+                </div>
+            </div>
+
+            <div class="ai-chat-body" id="aiChatBody">
+                <div class="chat-message bot-message">
+                    <div class="message-bubble">
+                        Radhe Radhe! 🙏 I am your <strong>Braj Sarthi</strong> pilgrimage companion. 
+                        Ask me about temple aarti timings, monkey precautions, pure sattvic dining, Govardhan Parikrama, or senior citizen wheelchair facilities!
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick question suggestions -->
+            <div class="ai-quick-chips" id="aiQuickChips">
+                <button type="button" class="quick-chip">Banke Bihari Darshan Timings</button>
+                <button type="button" class="quick-chip">Monkey Precautions</button>
+                <button type="button" class="quick-chip">Govardhan Parikrama Guide</button>
+                <button type="button" class="quick-chip">Best Mathura Peda</button>
+                <button type="button" class="quick-chip">Senior Citizen Facilities</button>
+            </div>
+
+            <form class="ai-chat-input-bar" id="aiChatForm" onsubmit="return false">
+                <input type="text" id="aiUserInput" placeholder="Ask anything about Braj Yatra..." autocomplete="off">
+                <button type="submit" id="aiSendBtn" class="btn btn-primary btn-sm">Ask</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Sacred Place Details Modal -->
+    <div class="details-modal-backdrop" id="placeDetailsBackdrop" hidden>
+        <div class="details-modal-window glass-panel" id="placeDetailsContent">
+            <!-- Dynamically populated -->
+        </div>
+    </div>
+
+    <!-- Yatri Login & Mobile OTP Modal -->
+    <div class="login-modal-backdrop" id="loginModalBackdrop" hidden>
+        <div class="login-modal-window glass-panel">
+            <button type="button" class="modal-close-corner" id="loginCloseBtn" aria-label="Close Login">&times;</button>
+            
+            <div class="login-modal-header">
+                <span class="login-brand-icon">🛕</span>
+                <div>
+                    <h3 class="login-title">Yatri Devotee Login</h3>
+                    <p class="login-sub">श्री ब्रज यात्रा • Phone OTP Authentication</p>
+                </div>
+            </div>
+
+            <!-- Step 1: Phone Number & Name Input -->
+            <form class="login-step" id="loginStepPhone">
+                <p class="login-step-instruction">
+                    Sign in with your mobile number to sync saved itineraries, access verified Digital Yatra Passes, and get personalized pilgrimage updates.
+                </p>
+
+                <div class="input-group">
+                    <label for="loginNameInput">Devotee Full Name</label>
+                    <input type="text" id="loginNameInput" class="form-input" placeholder="e.g. Kushagr Varshney" autocomplete="name">
+                </div>
+
+                <div class="input-group">
+                    <label for="loginPhoneInput">Mobile Number (10 Digits) *</label>
+                    <div class="phone-input-wrap">
+                        <span class="country-prefix">🇮🇳 +91</span>
+                        <input type="tel" id="loginPhoneInput" class="form-input phone-field" placeholder="98765 43210" maxlength="10" inputmode="numeric" required autocomplete="tel-national">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-glow" id="sendOtpBtn">
+                    📲 Send OTP (ओटीपी भेजें)
+                </button>
+
+                <div class="login-trust-note">
+                    🔒 Instant OTP sent to your phone. Fast, secure, and no password to remember.
+                </div>
+            </form>
+
+            <!-- Step 2: OTP Verification Form -->
+            <form class="login-step" id="loginStepOtp" hidden>
+                <!-- Live Simulated SMS Notification Banner for Demo / Real Simulation -->
+                <div class="sms-simulation-card" id="smsSimulationCard">
+                    <div class="sms-sim-header">
+                        <span class="sms-sim-icon">📲</span>
+                        <span class="sms-sim-title">Live SMS Dispatched</span>
+                        <span class="sms-sim-badge">Telecom Gateway</span>
+                    </div>
+                    <div class="sms-sim-body" id="smsSimBody">
+                        [Braj Yatra] <strong>4829</strong> is your secret OTP for Yatri Login. Valid for 5 minutes.
+                    </div>
+                    <button type="button" class="btn-autofill-otp" id="autoFillOtpBtn">
+                        ⚡ Click to Auto-Fill OTP
+                    </button>
+                </div>
+
+                <div class="otp-sent-info">
+                    <span>Code sent to <strong id="dispTargetPhone">+91 **********</strong></span>
+                    <button type="button" class="btn-change-phone" id="changePhoneBtn">Change Phone</button>
+                </div>
+
+                <div class="input-group">
+                    <label for="loginOtpInput">Enter 4-Digit OTP Code *</label>
+                    <input type="text" id="loginOtpInput" class="form-input otp-input-large" placeholder="• • • •" maxlength="6" inputmode="numeric" required autocomplete="one-time-code">
+                </div>
+
+                <div class="otp-timer-row">
+                    <span id="otpCountdownText">Resend available in <strong id="otpTimerCount">30</strong>s</span>
+                    <button type="button" class="btn-resend-link" id="resendOtpBtn" disabled>Resend Code</button>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block btn-glow" id="verifyOtpBtn">
+                    ✨ Verify & Login (सत्यापित करें)
+                </button>
+            </form>
+
+            <!-- Step 3: Login Success View -->
+            <div class="login-success-view" id="loginSuccessView" hidden>
+                <div class="success-om-icon">🙏</div>
+                <h3>Radhe Radhe! Welcome</h3>
+                <p id="successWelcomeMsg">You are now logged in. Your pilgrimage plans are securely synced.</p>
+                <div class="success-user-card">
+                    <span class="s-name" id="successUserName">Kushagr Varshney</span>
+                    <span class="s-phone" id="successUserPhone">+91 9876543210</span>
+                </div>
+                <button type="button" class="btn btn-primary btn-block btn-glow" id="continueAfterLoginBtn">
+                    Continue to Braj Yatra
+                </button>
+                <button type="button" class="btn btn-outline-gold btn-block" id="viewProfileAfterLoginBtn" style="margin-top: 10px;">
+                    👤 View My Profile Details
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Devotee Profile Details Modal -->
+    <div class="profile-modal-backdrop" id="profileModalBackdrop" hidden>
+        <div class="profile-modal-window glass-panel">
+            <button type="button" class="modal-close-corner" id="profileCloseBtn" aria-label="Close Profile">&times;</button>
+            
+            <div class="profile-modal-header">
+                <div class="profile-avatar-wrap">
+                    <span class="profile-avatar-icon">🙏</span>
+                    <span class="profile-verified-badge" title="Phone OTP Verified">✓</span>
+                </div>
+                <div class="profile-title-wrap">
+                    <div class="profile-badge-tag">श्री ब्रज पुण्य यात्री • Verified Yatri</div>
+                    <h3 class="profile-devotee-name" id="profileDevoteeName">Devotee</h3>
+                    <p class="profile-devotee-phone" id="profileDevoteePhone">+91 **********</p>
+                </div>
+            </div>
+
+            <div class="profile-info-grid">
+                <div class="profile-info-card">
+                    <span class="p-label">Account Status</span>
+                    <span class="p-val status-online">🟢 Active Devotee</span>
+                </div>
+                <div class="profile-info-card">
+                    <span class="p-label">Member Since</span>
+                    <span class="p-val" id="profileJoinedAt">Oct 2026</span>
+                </div>
+                <div class="profile-info-card">
+                    <span class="p-label">Digital Yatra Pass</span>
+                    <span class="p-val" id="profilePassesCount">1 Active / Ready</span>
+                </div>
+                <div class="profile-info-card">
+                    <span class="p-label">Pinned Shrines</span>
+                    <span class="p-val" id="profileSavedCount">0 Shrines</span>
+                </div>
+            </div>
+
+            <div class="profile-blessing-card">
+                <span class="blessing-icon">🛕</span>
+                <p>
+                    <strong>राधे राधे!</strong> May your sacred pilgrimage across Mathura, Vrindavan, Govardhan, Gokul, and Barsana bring immense peace, divine love, and blessings.
+                </p>
+            </div>
+
+            <div class="profile-actions-grid">
+                <a href="#planner" class="btn btn-outline-gold btn-sm profile-action-btn" id="profileGoPlannerBtn">
+                    🧭 Trip Builder
+                </a>
+                <a href="#yatra-pass" class="btn btn-outline-gold btn-sm profile-action-btn" id="profileGoPassBtn">
+                    🎫 Yatra Pass
+                </a>
+                <button type="button" class="btn btn-outline-gold btn-sm profile-action-btn" id="profileDonateBtn">
+                    💳 Seva & UPI
+                </button>
+            </div>
+
+            <div class="profile-modal-footer">
+                <button type="button" class="btn btn-outline-danger btn-block" id="profileLogoutBtn">
+                    🚪 Logout from this Account
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Divine UPI Payment Gateway Modal -->
+    <div class="payment-modal-backdrop" id="paymentModalBackdrop" hidden>
+        <div class="payment-modal-window glass-panel">
+            <button type="button" class="modal-close-corner" id="paymentCloseBtn" aria-label="Close Payment">&times;</button>
+
+            <div class="payment-modal-header">
+                <div class="payment-header-left">
+                    <span class="upi-logo-badge">⚡ UPI</span>
+                    <div>
+                        <h3 class="payment-title">Shri Braj Yatra Seva & VIP Payment</h3>
+                        <p class="payment-sub">Direct, Instant UPI Transfer to Bharat Sharma</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 1: Select or Enter Amount & Details -->
+            <div class="payment-step" id="paymentStepForm">
+                <div class="payment-preset-wrap">
+                    <label class="pay-field-label">Select Seva / VIP Darshan Pass Amount</label>
+                    <div class="amount-presets" id="amountPresets">
+                        <button type="button" class="amount-chip" data-amt="51">₹51 <span>Shubh</span></button>
+                        <button type="button" class="amount-chip" data-amt="101">₹101 <span>Darshan</span></button>
+                        <button type="button" class="amount-chip active" data-amt="251">₹251 <span>VIP Pass</span></button>
+                        <button type="button" class="amount-chip" data-amt="501">₹501 <span>Parikrama</span></button>
+                        <button type="button" class="amount-chip" data-amt="1100">₹1,100 <span>Maha Seva</span></button>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="customPayAmount">Or Enter Custom Amount (₹)</label>
+                        <div class="custom-amount-wrap">
+                            <span class="rupee-symbol">₹</span>
+                            <input type="number" id="customPayAmount" class="form-input" min="1" value="251">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label for="payPurposeSelect">Purpose of Payment</label>
+                        <select id="payPurposeSelect" class="form-select">
+                            <option value="Braj Yatra VIP Pass & Priority Darshan">VIP Darshan Pass & Priority Slot</option>
+                            <option value="Braj Parikrama Seva & E-Rickshaw Fund">Parikrama & E-Cart Fund</option>
+                            <option value="Yamuna Ghat Evening Aarti Sankalp">Yamuna Maha Aarti Sankalp</option>
+                            <option value="Braj Dham Sadhu & Gau Seva">Sadhu & Gau Seva</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="payDevoteeName">Devotee Name</label>
+                        <input type="text" id="payDevoteeName" class="form-input" placeholder="e.g. Kushagr Varshney">
+                    </div>
+                    <div class="input-group">
+                        <label for="payDevoteePhone">Mobile Number (for receipt)</label>
+                        <input type="tel" id="payDevoteePhone" class="form-input" placeholder="e.g. 98765 43210">
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary btn-block btn-glow" id="proceedToUpiBtn">
+                    ⚡ Generate UPI QR & Pay Direct
+                </button>
+            </div>
+
+            <!-- Step 2: Interactive UPI Payment Interface -->
+            <div class="payment-step" id="paymentStepUpi" hidden>
+                <div class="upi-recipient-box">
+                    <div class="upi-box-header">
+                        <span class="verified-upi-badge">🛡️ Verified UPI Beneficiary</span>
+                        <span class="pay-amount-display" id="dispPayAmount">₹251</span>
+                    </div>
+                    <div class="upi-details-grid">
+                        <div>
+                            <span class="u-lbl">Payee Name</span>
+                            <strong class="u-val" id="dispPayeeName">Bharat Sharma</strong>
+                        </div>
+                        <div>
+                            <span class="u-lbl">Official Receiver UPI ID</span>
+                            <div class="upi-id-copy-row">
+                                <strong class="u-val highlight-upi" id="dispUpiId">bharatsharma156742@ptaxis</strong>
+                                <button type="button" class="btn-copy-upi" id="copyUpiIdBtn" title="Copy UPI ID">
+                                    📋 Copy
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="upi-payment-cols">
+                    <!-- Dynamic QR Code Column -->
+                    <div class="upi-qr-col">
+                        <div class="upi-qr-frame">
+                            <img src="assets/bharat-upi-qr.jpg" alt="Bharat Sharma UPI QR Code" id="upiDynamicQrImg" class="upi-qr-image">
+                            <div class="qr-scan-badge">Scan to Pay bharatsharma156742@ptaxis</div>
+                        </div>
+                        <span class="qr-supported-text">GPay • PhonePe • Paytm • BHIM • CRED</span>
+                        <a href="assets/bharat-upi-qr.jpg" download="Bharat_Sharma_Braj_Yatra_UPI_QR.jpg" class="btn-download-qr" id="downloadQrBtn" title="Save QR to Gallery">
+                            ⬇️ Save QR Code Image
+                        </a>
+                    </div>
+
+                    <!-- 1-Click Mobile Apps Column -->
+                    <div class="upi-apps-col">
+                        <span class="pay-methods-title">Or Pay with 1-Click App:</span>
+                        <div class="app-buttons-grid">
+                            <a href="#" class="upi-app-btn phonepe-btn" id="phonepeDeepLink" target="_blank">
+                                <span class="app-icon">🟣</span>
+                                <span>PhonePe</span>
+                            </a>
+                            <a href="#" class="upi-app-btn gpay-btn" id="gpayDeepLink" target="_blank">
+                                <span class="app-icon">🔵</span>
+                                <span>Google Pay</span>
+                            </a>
+                            <a href="#" class="upi-app-btn paytm-btn" id="paytmDeepLink" target="_blank">
+                                <span class="app-icon">🟢</span>
+                                <span>Paytm UPI</span>
+                            </a>
+                            <a href="#" class="upi-app-btn bhim-btn" id="genericUpiDeepLink">
+                                <span class="app-icon">🟠</span>
+                                <span>Any UPI App</span>
+                            </a>
+                        </div>
+
+                        <!-- Verification Input -->
+                        <div class="utr-verify-box">
+                            <label for="utrInput" class="utr-label">After payment, enter 12-digit UPI / UTR Ref No:</label>
+                            <div class="utr-input-row">
+                                <input type="text" id="utrInput" class="form-input" placeholder="e.g. 429183920194" maxlength="16">
+                                <button type="button" class="btn btn-primary btn-sm" id="verifyPaymentBtn">
+                                    ✅ Confirm Payment
+                                </button>
+                            </div>
+                            <button type="button" class="btn-instant-demo-pay" id="instantDemoVerifyBtn">
+                                ⚡ Instant Demo Verify (Hackathon 1-Click)
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="payment-step-footer">
+                    <button type="button" class="btn-back-step" id="backToAmountBtn">&larr; Change Amount</button>
+                    <span class="ssl-note">🔒 100% Secure Direct UPI Transfer to Bharat Sharma</span>
+                </div>
+            </div>
+
+            <!-- Step 3: Verified Official Receipt -->
+            <div class="payment-step" id="paymentStepReceipt" hidden>
+                <div class="receipt-card" id="printableReceipt">
+                    <div class="receipt-header">
+                        <span class="receipt-om">🛕</span>
+                        <div>
+                            <div class="receipt-title">SHRI BRAJ YATRA SEVA RECEIPT</div>
+                            <div class="receipt-sub">Official Devotee Payment Acknowledgment</div>
+                        </div>
+                        <span class="receipt-paid-seal">PAID & VERIFIED</span>
+                    </div>
+
+                    <div class="receipt-body">
+                        <div class="receipt-grid">
+                            <div>
+                                <span class="r-lbl">Receipt ID</span>
+                                <strong class="r-val" id="recId">RCP_BY_8F3A19C2</strong>
+                            </div>
+                            <div>
+                                <span class="r-lbl">Payment Date</span>
+                                <strong class="r-val" id="recDate">16 Oct 2026, 02:25 PM</strong>
+                            </div>
+                            <div>
+                                <span class="r-lbl">Devotee Name</span>
+                                <strong class="r-val" id="recDevotee">Kushagr Varshney</strong>
+                            </div>
+                            <div>
+                                <span class="r-lbl">Amount Paid</span>
+                                <strong class="r-val gold-val" id="recAmount">₹251</strong>
+                            </div>
+                            <div>
+                                <span class="r-lbl">Receiver UPI ID</span>
+                                <strong class="r-val" id="recUpi">bharatsharma156742@ptaxis</strong>
+                            </div>
+                            <div>
+                                <span class="r-lbl">UPI Ref / UTR No.</span>
+                                <strong class="r-val" id="recUtr">UPI491823901248</strong>
+                            </div>
+                        </div>
+
+                        <div class="receipt-blessing-note">
+                            "May Lord Shri Krishna and Shri Radha Rani shower endless peace, divine love, and prosperity upon you and your family. Radhe Radhe!"
+                        </div>
+                    </div>
+
+                    <div class="receipt-footer">
+                        <button type="button" class="btn btn-sm btn-ghost" id="printReceiptBtn">🖨️ Print Receipt</button>
+                        <button type="button" class="btn btn-sm btn-primary" id="finishPaymentBtn">Done & Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "rev-1",
+    "author": "Acharya Ramanand",
+    "city": "Varanasi",
+    "place": "Vishram Ghat",
+    "rating": 5,
+    "comment": "The Yamuna Aarti at dusk brought tears of joy. We booked a wooden boat 30 mins before 7 PM.",
+    "date": "2 days ago"
+  },
+  {
+    "id": "rev-2",
+    "author": "Sunita Agarwal",
+    "city": "Jaipur",
+    "place": "Shri Banke Bihari Temple",
+    "rating": 5,
+    "comment": "Arrived at 7:30 AM before morning curtains opened. No phones made entry smooth and peaceful.",
+    "date": "Yesterday"
+  },
+  {
+    "id": "rev-3",
+    "author": "Raghavendra Rao",
+    "city": "Bengaluru",
+    "place": "Govardhan Parikrama",
+    "rating": 5,
+    "comment": "Parikrama via golf cart was a blessing for my elderly parents. The smart transit calculator was spot on.",
+    "date": "3 days ago"
+  },
+  {
+    "id": "rev-4",
+    "author": "Meenakshi Sharma",
+    "city": "Delhi",
+    "place": "Prem Mandir",
+    "rating": 5,
+    "comment": "The evening light show at Prem Mandir was divine. Loved the Mathura peda recommendations near Holi Gate!",
+    "date": "4 days ago"
+  },
+  {
+    "id": "rev-5",
+    "author": "Devendra Joshi",
+    "city": "Ahmedabad",
+    "place": "Braj Yatra Circuit",
+    "rating": 5,
+    "comment": "Generated a 3-day itinerary through the portal. The sequential routing saved us hours of backtracking across towns.",
+    "date": "5 days ago"
+  }
+]

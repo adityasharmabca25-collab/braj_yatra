@@ -1,0 +1,997 @@
+[
+  {
+    "id": "janmabhoomi",
+    "name": "Shri Krishna Janmabhoomi Complex",
+    "area": "Mathura",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1.5,
+    "slot": "morning",
+    "timing": "5:30 AM - 12:00 PM, 4:00 PM - 8:30 PM",
+    "crowd": "High",
+    "waitTimeMin": 35,
+    "dressCode": "Modest attire; strictly no electronic devices inside",
+    "image": "assets/janmabhoomi.jpg",
+    "note": "The revered sanctum and prison cell (Garbha Griha) where Bhagwan Krishna took birth. Features the majestic Bhagvat Bhavan and ancient stone carvings.",
+    "audio": "Shri Krishna Janmabhoomi is the sacred epicenter of Mathura where Bhagwan Krishna incarnated at midnight to Devaki and Vasudeva."
+  },
+  {
+    "id": "dwarkadhish",
+    "name": "Shri Dwarkadhish Temple",
+    "area": "Mathura",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "6:30 AM - 10:30 AM, 4:00 PM - 7:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 20,
+    "dressCode": "Traditional dress recommended",
+    "image": "assets/dwarkadhish.jpg",
+    "note": "Famous for intricate Rajasthani architecture, carved pillars, and ecstatic swing festival (Hindola) during monsoon.",
+    "audio": "Built in 1814 by Seth Gokuldass, Dwarkadhish Mandir showcases Lord Krishna as the majestic King of Dwarka with vibrant frescoes."
+  },
+  {
+    "id": "vishram",
+    "name": "Vishram Ghat & Yamuna Maha Aarti",
+    "area": "Mathura",
+    "cats": [
+      "ghats",
+      "temples"
+    ],
+    "h": 1,
+    "slot": "evening",
+    "timing": "Open all day; Evening Maha Aarti at 7:00 PM",
+    "crowd": "High",
+    "waitTimeMin": 15,
+    "dressCode": "Footwear removed on the marble ghat steps",
+    "image": "assets/vishram.jpg",
+    "note": "The central ghat where Krishna rested after defeating tyrant Kansa. Beautiful sunset wooden boat rides and glowing brass aartis.",
+    "audio": "Vishram Ghat is the jewel of Mathura's 25 holy ghats. Here Lord Krishna rested, and the sacred Yamuna aarti fills the river with shimmering diyas."
+  },
+  {
+    "id": "bhuteshwar",
+    "name": "Bhuteshwar Mahadev Temple",
+    "area": "Mathura",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "5:00 AM - 1:00 PM, 4:30 PM - 9:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Traditional Indian attire",
+    "image": "assets/janmabhoomi.jpg",
+    "note": "One of the four ancient Shiva guardian protectors (Kotwal) of Mathura, protecting the city from negative energies since antiquity.",
+    "audio": "Bhuteshwar Mahadev is considered the eternal protector of Mathura. Pilgrims offer water and bilva leaves before proceeding on pilgrimage."
+  },
+  {
+    "id": "gitamandir",
+    "name": "Gita Mandir (Birla Mandir)",
+    "area": "Mathura",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "midday",
+    "timing": "6:00 AM - 12:00 PM, 3:30 PM - 8:30 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Casual modest attire",
+    "image": "assets/janmabhoomi.jpg",
+    "note": "Grand red sandstone temple built by the Birla family where all 18 chapters and 700 verses of the Bhagavad Gita are carved on marble pillars.",
+    "audio": "Gita Mandir features a magnificent life-sized chariot of Lord Krishna and Arjuna, surrounded by peaceful landscaped gardens on Mathura-Vrindavan road."
+  },
+  {
+    "id": "potarakund",
+    "name": "Potara Kund",
+    "area": "Mathura",
+    "cats": [
+      "ghats",
+      "heritage"
+    ],
+    "h": 0.5,
+    "slot": "midday",
+    "timing": "Open sunrise to sunset",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Casual comfortable attire",
+    "image": "assets/potarakund.jpg",
+    "note": "Large octagonal stepped reservoir where Mother Devaki used to wash baby Krishna's baby clothes (potra). Quiet, peaceful heritage site.",
+    "audio": "Potara Kund is an ancient stepped water tank associated with Krishna's infancy, featuring massive red sandstone steps."
+  },
+  {
+    "id": "kansqila",
+    "name": "Kans Qila (Kansa Fort Ruins)",
+    "area": "Mathura",
+    "cats": [
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "midday",
+    "timing": "8:00 AM - 6:00 PM",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Walking shoes recommended",
+    "image": "assets/kansqila.jpg",
+    "note": "Ancient riverfront fort ruins on Yamuna banks, restored by Raja Man Singh of Amber with an observatory built by Sawai Jai Singh.",
+    "audio": "Kans Qila stands as a testament to Mathura's antiquity, offering commanding views of the Yamuna and old city ghats."
+  },
+  {
+    "id": "chamundadevi",
+    "name": "Chamunda Devi Temple",
+    "area": "Mathura",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 0.75,
+    "slot": "morning",
+    "timing": "6:00 AM - 12:00 PM, 4:00 PM - 9:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Modest traditional attire",
+    "image": "assets/janmabhoomi.jpg",
+    "note": "Revered Shaktipeeth temple near Mathura where a lock of Mother Sati's hair is believed to have fallen. Highly auspicious during Navratri.",
+    "audio": "Shri Chamunda Devi Temple is one of Mathura's powerful Shakti sanctums, visited by pilgrims seeking divine protection and courage."
+  },
+  {
+    "id": "museum",
+    "name": "Mathura Government Museum",
+    "area": "Mathura",
+    "cats": [
+      "heritage"
+    ],
+    "h": 1.5,
+    "slot": "midday",
+    "timing": "10:30 AM - 4:30 PM (Closed on Mondays)",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Casual attire; photography pass available",
+    "image": "assets/museum.jpg",
+    "note": "World-renowned museum housing the finest collection of red sandstone Kushana and Gupta era sculptures, headless statue of King Kanishka, and Buddhist relics.",
+    "audio": "Founded in 1874 by F.S. Growse, the Mathura Museum holds globally celebrated masterworks of ancient Indian terracotta and stone sculpture."
+  },
+  {
+    "id": "keshavdev",
+    "name": "Shri Keshav Dev Ji Temple",
+    "area": "Mathura",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "5:30 AM - 12:00 PM, 4:00 PM - 8:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Traditional attire",
+    "image": "assets/janmabhoomi.jpg",
+    "note": "The original historic seat of Lord Keshavdev consecrated by Vajranabh, Great-grandson of Krishna, located adjacent to the Janmabhoomi sanctum.",
+    "audio": "Keshavdev Temple was historically rebuilt multiple times by rulers including Chandragupta Vikramaditya and Bir Singh Deo Orchha."
+  },
+  {
+    "id": "mathurafood",
+    "name": "Holi Gate Bazaar & Brijwasi Sweets",
+    "area": "Mathura",
+    "cats": [
+      "food"
+    ],
+    "h": 1,
+    "slot": "midday",
+    "timing": "8:00 AM - 10:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 10,
+    "dressCode": "Casual walking gear",
+    "image": "assets/hero-bg.jpg",
+    "note": "Historic bazaar renowned for caramelized Mathura Peda, piping hot Hing Kachori with spicy aloo, and creamy saffron Kulhad Rabri.",
+    "audio": "Mathura's culinary heritage is legendary. Caramelized khoya pedas prepared over smoldering fire offer an unforgettable taste of Braj."
+  },
+  {
+    "id": "gokarneshwar",
+    "name": "Gokarneshwar Mahadev Temple",
+    "area": "Mathura",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 0.75,
+    "slot": "evening",
+    "timing": "6:00 AM - 12:00 PM, 4:30 PM - 8:30 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Traditional attire",
+    "image": "assets/janmabhoomi.jpg",
+    "note": "Ancient northern guardian Shiva lingam situated near Saraswati Kund, associated with sage Gokarna and ancient Vedic yajnas.",
+    "audio": "Gokarneshwar Mahadev completes the divine protective quadrangle of Lord Shiva safeguarding the holy city of Mathura."
+  },
+  {
+    "id": "bankebihari",
+    "name": "Shri Banke Bihari Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples"
+    ],
+    "h": 1.5,
+    "slot": "morning",
+    "timing": "7:45 AM - 12:00 PM, 5:30 PM - 9:30 PM",
+    "crowd": "Very High",
+    "waitTimeMin": 45,
+    "dressCode": "Keep spectacles and bags safe from monkeys",
+    "image": "assets/bankebihari.jpg",
+    "note": "Vrindavan's most celebrated deity in Tribhanga posture, manifested by Swami Haridas in Nidhivan. Curtains open and close repeatedly so the Lord's enchanting glance does not overwhelm devotees.",
+    "audio": "Shri Banke Bihari was manifested by Swami Haridas's divine singing. The Lord is treated with tender love like a playful child."
+  },
+  {
+    "id": "premmandir",
+    "name": "Prem Mandir (Temple of Divine Love)",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 2,
+    "slot": "evening",
+    "timing": "5:30 AM - 12:00 PM, 4:30 PM - 8:30 PM (Light show at 7:30 PM)",
+    "crowd": "High",
+    "waitTimeMin": 25,
+    "dressCode": "Modest comfortable clothing",
+    "image": "assets/prem-mandir.jpg",
+    "note": "Spectacular Italian Carrara white marble temple complex depicting divine pastimes, featuring a world-famous illuminated musical fountain show.",
+    "audio": "Conceived by Jagadguru Kripalu Maharaj, Prem Mandir represents pure divine love and radiates vibrant multicolored hues at twilight."
+  },
+  {
+    "id": "iskconvrindavan",
+    "name": "ISKCON Krishna Balaram Mandir",
+    "area": "Vrindavan",
+    "cats": [
+      "temples"
+    ],
+    "h": 1.5,
+    "slot": "morning",
+    "timing": "4:30 AM - 12:45 PM, 4:30 PM - 8:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Modest attire; shoes deposited at entrance",
+    "image": "assets/iskconvrindavan.jpg",
+    "note": "Vibrant temple with continuous 24-hour Harinam Sankirtan since 1975, white marble courtyard, and Srila Prabhupada's Samadhi Mandir.",
+    "audio": "The ISKCON Krishna Balaram Temple in Raman Reti is a global center for bhakti yoga and ecstatic Hare Krishna singing."
+  },
+  {
+    "id": "nidhivan",
+    "name": "Nidhivan Sacred Grove",
+    "area": "Vrindavan",
+    "cats": [
+      "nature",
+      "temples"
+    ],
+    "h": 1,
+    "slot": "midday",
+    "timing": "6:00 AM - 11:30 AM, 4:00 PM - 6:30 PM (Gates close at sunset)",
+    "crowd": "High",
+    "waitTimeMin": 20,
+    "dressCode": "Strictly vacate before nightfall; guard eyeglasses from monkeys",
+    "image": "assets/ramanreti.jpg",
+    "note": "Mystical grove of intertwined Tulsi trees where Radha and Krishna are believed to perform nocturnal Raas Leela. Houses Rang Mahal and Lalita Kund.",
+    "audio": "Nidhivan's sacred trees grow in twisted pairs. According to belief, no living being remains inside after the evening Shayan Aarti."
+  },
+  {
+    "id": "radharaman",
+    "name": "Shri Radha Raman Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "8:00 AM - 12:30 PM, 6:00 PM - 9:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 20,
+    "dressCode": "Traditional Indian clothing appreciated",
+    "image": "assets/radharaman.jpg",
+    "note": "Houses the exquisitely self-manifested deity of Krishna carved from a sacred Shaligram Shila by Gopal Bhatta Goswami. The sacred kitchen fire has burned without interruption for over 500 years.",
+    "audio": "Shri Radha Raman manifested on Vaishakha Purnima in 1542. His radiant smile and delicate features are spiritually captivating."
+  },
+  {
+    "id": "radhavallabh",
+    "name": "Shri Radha Vallabh Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "6:00 AM - 11:30 AM, 5:30 PM - 9:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 20,
+    "dressCode": "Traditional modest attire",
+    "image": "assets/radhavallabh.jpg",
+    "note": "Headquarters of the Radha Vallabh sampradaya established by Hith Harivansh Mahaprabhu. Worship emphasizes the supreme devotion to Shri Radha Rani.",
+    "audio": "In Radha Vallabh Temple, beside the deity of Krishna, a sacred crown is placed to represent the omnipresent divine form of Radha Rani."
+  },
+  {
+    "id": "radhadamodar",
+    "name": "Shri Radha Damodar Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "6:30 AM - 12:00 PM, 5:00 PM - 8:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Modest attire",
+    "image": "assets/radhadamodar.jpg",
+    "note": "Established by Srila Jiva Goswami in 1542. Houses the sacred Govardhan Shila given by Krishna to Sanatana Goswami with Lord Krishna's footprint, calf hoof print, and flute mark.",
+    "audio": "Four parikramas of the Radha Damodar temple are considered equivalent to completing the full 21 km Govardhan Hill circumambulation."
+  },
+  {
+    "id": "radhamadanmohan",
+    "name": "Shri Radha Madan Mohan Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "evening",
+    "timing": "7:00 AM - 12:00 PM, 4:00 PM - 8:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 10,
+    "dressCode": "Modest walking clothing",
+    "image": "assets/radhamadanmohan.jpg",
+    "note": "Vrindavan's oldest standing red sandstone temple standing majestically atop a 50-foot hillock near Kalidaha, built in 1580 by Ram Das Kapur.",
+    "audio": "Radha Madan Mohan is closely linked with Srila Sanatana Goswami and serves as a classic landmark of medieval Braj architecture."
+  },
+  {
+    "id": "keshighat",
+    "name": "Keshi Ghat & Sunset Yamuna Aarti",
+    "area": "Vrindavan",
+    "cats": [
+      "ghats",
+      "temples"
+    ],
+    "h": 1,
+    "slot": "evening",
+    "timing": "Open all day; Sunset Aarti at 6:30 PM",
+    "crowd": "High",
+    "waitTimeMin": 10,
+    "dressCode": "Footwear removed on the bathing steps",
+    "image": "assets/keshighat.jpg",
+    "note": "Vrindavan's most magnificent Yamuna riverfront ghat where Lord Krishna bathed after defeating the fierce demon Keshi who took horse form.",
+    "audio": "Sunset at Keshi Ghat features glowing floating lamps on the holy Yamuna and stunning tiered sandstone Rajasthani architecture."
+  },
+  {
+    "id": "govinddev",
+    "name": "Govind Dev Ji Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "midday",
+    "timing": "8:00 AM - 12:30 PM, 4:30 PM - 8:00 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Modest attire",
+    "image": "assets/govinddev.jpg",
+    "note": "A 1590 architectural marvel built by Raja Man Singh of Amer using red sandstone. Originally 7 stories tall, combining Hindu and medieval palace design.",
+    "audio": "Govind Dev Ji Temple was once visible for miles with its monumental vaulted dome, celebrating Lord Krishna's appearance as Govinda."
+  },
+  {
+    "id": "gopeshwar",
+    "name": "Gopeshwar Mahadev Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "5:00 AM - 12:00 PM, 5:00 PM - 9:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Traditional attire",
+    "image": "assets/bankebihari.jpg",
+    "note": "The unique temple where Lord Shiva is worshipped as a Gopi. In the evening, the Shiva lingam is dressed in feminine saree, shringar, and jewelry.",
+    "audio": "To enter the sacred Maha Raas dance, Lord Shiva took Gopi form after bathing in Mansarovar. Krishna affectionately named him Gopeshwar."
+  },
+  {
+    "id": "sewakunj",
+    "name": "Sewa Kunj & Nikunj Van",
+    "area": "Vrindavan",
+    "cats": [
+      "nature",
+      "temples"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "6:00 AM - 11:30 AM, 4:30 PM - 6:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Modest clothing; beware of monkeys",
+    "image": "assets/ramanreti.jpg",
+    "note": "Walled sacred garden containing a central Krishna-Radha shrine where Krishna lovingly decorated and braided Radha Rani's hair before Raas.",
+    "audio": "Sewa Kunj is revered as the sanctum of divine loving service, filled with twisted trees, peaceful parikrama paths, and Lalita Kund."
+  },
+  {
+    "id": "priyakantju",
+    "name": "Shri Priya Kant Ju Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples"
+    ],
+    "h": 1.5,
+    "slot": "evening",
+    "timing": "6:00 AM - 12:30 PM, 4:30 PM - 8:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Modest clothing",
+    "image": "assets/priyakantju.jpg",
+    "note": "Stunning modern lotus-flower shaped temple standing 125 feet high on the Mathura-Vrindavan highway, founded by spiritual teacher Devkinandan Thakurji.",
+    "audio": "Surrounded by water ponds with evening colorful illumination, Priya Kant Ju temple is a breathtaking sight on the Chhatikara approach."
+  },
+  {
+    "id": "shahji",
+    "name": "Shahji Temple (Chhedi Walon Ka Mandir)",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 0.75,
+    "slot": "midday",
+    "timing": "8:00 AM - 11:30 AM, 5:30 PM - 8:00 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Modest attire",
+    "image": "assets/shahji.jpg",
+    "note": "Built in 1876 by wealthy merchant Shah Kundan Lal of Lucknow. Famous for 12 spiral twisted marble pillars and the Basanti Kamra with rare Belgian chandeliers.",
+    "audio": "Shahji Temple's Basanti Kamra opens only twice a year and features yellow silk wall hangings and ornate Austrian crystal lamps."
+  },
+  {
+    "id": "radhashyamasundar",
+    "name": "Shri Radha Shyamasundar Temple",
+    "area": "Vrindavan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "7:00 AM - 12:00 PM, 5:00 PM - 8:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Traditional attire",
+    "image": "assets/bankebihari.jpg",
+    "note": "One of the historic seven Goswami temples. The deity was manifested from the sacred heart of Shyamananda Pandit after he found Radha's divine anklet.",
+    "audio": "Radha Shyamasundar Temple has an exceptionally sweet devotional mood, venerating Srimati Radharani's pure transcendental love."
+  },
+  {
+    "id": "kaliyaghat",
+    "name": "Kaliya Dah & Sacred Kadamba Tree",
+    "area": "Vrindavan",
+    "cats": [
+      "ghats",
+      "heritage"
+    ],
+    "h": 0.75,
+    "slot": "midday",
+    "timing": "Open sunrise to sunset",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Casual comfortable attire",
+    "image": "assets/vishram.jpg",
+    "note": "The ancient Yamuna ghat containing the 5000-year-old surviving Kadamba tree from which boy Krishna leapt into the poisoned whirlpool to tame Kaliya Naag.",
+    "audio": "Here Krishna performed the Kaliya Mardan dance on the serpent's hundred hoods, purifying the Yamuna waters for all Braj devotees."
+  },
+  {
+    "id": "imlitala",
+    "name": "Imli Tala (Sacred Tamarind Tree)",
+    "area": "Vrindavan",
+    "cats": [
+      "nature",
+      "temples"
+    ],
+    "h": 0.75,
+    "slot": "morning",
+    "timing": "6:00 AM - 12:00 PM, 4:30 PM - 8:30 PM",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Modest attire",
+    "image": "assets/ramanreti.jpg",
+    "note": "Ancient tamarind tree on Yamuna bank where Sri Chaitanya Mahaprabhu sat in 1515, absorbed in intense Krishna Prema, chanting the holy names.",
+    "audio": "Imli Tala dates back to Satya Yuga. Krishna sat under this tree immersed in longing for Radha during the Raas Leela."
+  },
+  {
+    "id": "vaishnodevi",
+    "name": "Maa Vaishno Devi Ashram",
+    "area": "Vrindavan",
+    "cats": [
+      "temples"
+    ],
+    "h": 1.5,
+    "slot": "evening",
+    "timing": "6:00 AM - 1:00 PM, 4:00 PM - 9:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 20,
+    "dressCode": "Modest attire",
+    "image": "assets/vaishnodevi.jpg",
+    "note": "Features the world's tallest 141-foot statue of Goddess Vaishno Devi riding a lion, with realistic cave water walkways and a free spiritual museum.",
+    "audio": "Maa Vaishno Devi Ashram provides pilgrims an inspiring cave pilgrimage simulation alongside a charitable hospital and goshala."
+  },
+  {
+    "id": "ramanreti",
+    "name": "Raman Reti Sacred Sands",
+    "area": "Gokul",
+    "cats": [
+      "nature",
+      "temples"
+    ],
+    "h": 1.5,
+    "slot": "morning",
+    "timing": "5:30 AM - 12:00 PM, 4:00 PM - 8:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Remove footwear to walk in sacred sand; modest clothing",
+    "image": "assets/ramanreti.jpg",
+    "note": "The holy soft white sands where child Krishna and Balaram rolled, tumbled, and played with cowherd boys. Features an idyllic deer sanctuary and hermitage.",
+    "audio": "Pilgrims from around the world joyfully roll in the blessed sands of Raman Reti to receive the divine touch of baby Krishna's lotus feet."
+  },
+  {
+    "id": "chaurasikhamba",
+    "name": "Chaurasi Khamba (84 Pillars Palace)",
+    "area": "Gokul",
+    "cats": [
+      "heritage",
+      "temples"
+    ],
+    "h": 1,
+    "slot": "midday",
+    "timing": "6:00 AM - 7:00 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Modest attire",
+    "image": "assets/ramanreti.jpg",
+    "note": "Ancient palace of Nanda Maharaj in Old Gokul (Mahavan) built with 84 intricately carved stone pillars, representing the 84 lakh life species.",
+    "audio": "Chaurasi Khamba marks the palace where Yashoda cradled infant Krishna. It is one of the oldest preserved stone sanctums in the Mathura district."
+  },
+  {
+    "id": "brahmandghat",
+    "name": "Brahmand Ghat",
+    "area": "Gokul",
+    "cats": [
+      "ghats",
+      "temples"
+    ],
+    "h": 1,
+    "slot": "evening",
+    "timing": "Open all day; Evening Aarti at 6:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 10,
+    "dressCode": "Footwear removed on the riverside steps",
+    "image": "assets/vishram.jpg",
+    "note": "The sacred Yamuna ghat where toddler Krishna ate clay dirt. When Mother Yashoda scolded him, he opened his mouth and revealed the entire cosmic universe.",
+    "audio": "At Brahmand Ghat, the Brahmand Bihari temple overlooks the gentle Yamuna river where pilgrims collect consecrated holy earth (Mridika)."
+  },
+  {
+    "id": "nandbhavangokul",
+    "name": "Nand Bhavan (Gokul Palace)",
+    "area": "Gokul",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "6:00 AM - 12:00 PM, 4:00 PM - 8:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 15,
+    "dressCode": "Traditional attire",
+    "image": "assets/ramanreti.jpg",
+    "note": "The childhood home where baby Krishna lived after being carried across the flooded Yamuna by Vasudeva to save him from Kansa.",
+    "audio": "Nand Bhavan celebrates Krishna's sweet early childhood. Priests sing traditional Braj folk lullabies welcoming devotees to rock the Lord's cradle."
+  },
+  {
+    "id": "ukhalbandhan",
+    "name": "Ukhal Bandhan Ashram",
+    "area": "Gokul",
+    "cats": [
+      "heritage",
+      "temples"
+    ],
+    "h": 0.75,
+    "slot": "morning",
+    "timing": "6:30 AM - 12:00 PM, 4:00 PM - 7:30 PM",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Modest clothing",
+    "image": "assets/ramanreti.jpg",
+    "note": "Where Mother Yashoda tied naughty Krishna to a heavy wooden mortar (Ukhal). Krishna dragged the mortar and liberated two demigods trapped as Yamalarjuna trees.",
+    "audio": "Ukhal Bandhan reveals Krishna as Damodara, the Supreme Lord who willingly allows himself to be bound only by the pure rope of love."
+  },
+  {
+    "id": "chintaharan",
+    "name": "Chintaharan Mahadev Temple",
+    "area": "Gokul",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 0.75,
+    "slot": "evening",
+    "timing": "6:00 AM - 12:30 PM, 4:30 PM - 8:30 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Traditional attire",
+    "image": "assets/vishram.jpg",
+    "note": "Quiet Yamuna-side Shiva temple where Yashoda prayed to Lord Shiva to take away all evil eyes and anxieties (chinta) regarding her darling child Krishna.",
+    "audio": "Offering milk and jal at Chintaharan Mahadev is believed to dispel worldly stress, worries, and planetary afflictions."
+  },
+  {
+    "id": "putnamoksha",
+    "name": "Pootna Moksha Sthal",
+    "area": "Gokul",
+    "cats": [
+      "heritage"
+    ],
+    "h": 0.5,
+    "slot": "midday",
+    "timing": "Open sunrise to sunset",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Casual attire",
+    "image": "assets/ramanreti.jpg",
+    "note": "The pasture field where infant Krishna sucked out the life air of the demoness Pootna, granting her the eternal exalted status of a mother in the spiritual world.",
+    "audio": "This pastime illustrates the supreme causeless mercy of Krishna, who accepted even a poisoner as a foster mother because she offered her breast milk."
+  },
+  {
+    "id": "yashodaghat",
+    "name": "Yashoda Ghat & Baithakji",
+    "area": "Gokul",
+    "cats": [
+      "ghats"
+    ],
+    "h": 0.75,
+    "slot": "evening",
+    "timing": "Open sunrise to 8:00 PM",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Remove footwear on the ghat",
+    "image": "assets/vishram.jpg",
+    "note": "Peaceful Yamuna ghat where Mother Yashoda washed clothes and bathed baby Krishna. Contains a revered Vallabhacharya Baithakji.",
+    "audio": "Yashoda Ghat offers serene sunset views of the Yamuna with traditional wooden boats and sweet breezes of rural Gokul."
+  },
+  {
+    "id": "radharani",
+    "name": "Shri Radha Rani Temple (Ladli Ji Mandir)",
+    "area": "Barsana",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 2,
+    "slot": "morning",
+    "timing": "5:00 AM - 12:00 PM, 4:30 PM - 8:30 PM",
+    "crowd": "High",
+    "waitTimeMin": 30,
+    "dressCode": "Stair climbing or ropeway pass; modest clothing",
+    "image": "assets/radharani.jpg",
+    "note": "Perched majestically on Bhanugarh hill overlooking scenic Barsana. Birthplace of Shri Radha Rani and world-famous epicenter of Lathmar Holi.",
+    "audio": "Shri Radha Rani temple, also known as Shriji Mandir, is a 250-step palatial shrine radiating unmatched joy and devotion in Braj."
+  },
+  {
+    "id": "rangeelimahal",
+    "name": "Rangeeli Mahal & Kirti Mandir",
+    "area": "Barsana",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1.5,
+    "slot": "evening",
+    "timing": "6:00 AM - 12:00 PM, 4:30 PM - 8:30 PM",
+    "crowd": "High",
+    "waitTimeMin": 15,
+    "dressCode": "Modest attire",
+    "image": "assets/kirtimandir.jpg",
+    "note": "Breathtakingly carved pink stone temple complex dedicated to Mother Kirti and baby Radha, featuring lush gardens and divine illuminated statues.",
+    "audio": "Kirti Mandir is the only temple in the world celebrating Shri Radha's mother, Kirti Maiya, holding infant Radharani in her lap."
+  },
+  {
+    "id": "maanmandir",
+    "name": "Maan Mandir (Maan Garh Peak)",
+    "area": "Barsana",
+    "cats": [
+      "temples",
+      "nature"
+    ],
+    "h": 1.5,
+    "slot": "midday",
+    "timing": "6:00 AM - 7:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 10,
+    "dressCode": "Modest attire; walking shoes",
+    "image": "assets/radharani.jpg",
+    "note": "Peak where Radha took divine loving offense (maan) and Krishna pacified her by dressing as a peacock. Base of Ramesh Baba's massive cow sanctuary housing 50,000+ cows.",
+    "audio": "Maan Mandir commands panoramic views of the Aravalli ridges of Braj and stands as a beacon of Yamuna revival and cow protection."
+  },
+  {
+    "id": "danbihari",
+    "name": "Dan Bihari Temple",
+    "area": "Barsana",
+    "cats": [
+      "temples"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "6:30 AM - 11:30 AM, 4:30 PM - 8:00 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Traditional attire",
+    "image": "assets/radharani.jpg",
+    "note": "Historic temple commemorating where Krishna stopped the Gopis and demanded a loving tax (dan) of butter, milk, and sweet devotion.",
+    "audio": "Dan Bihari temple in the narrow gorge of Sankari Khor reflects the joyful tax-collection pastimes of youth Krishna in Barsana."
+  },
+  {
+    "id": "priyakund",
+    "name": "Priya Kund (Pili Pokhar)",
+    "area": "Barsana",
+    "cats": [
+      "ghats",
+      "nature"
+    ],
+    "h": 0.75,
+    "slot": "evening",
+    "timing": "Open sunrise to sunset",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Casual modest attire",
+    "image": "assets/kusum-sarovar.jpg",
+    "note": "Sacred pond where Mother Yashoda applied turmeric to Radha's hands before an auspicious ceremony, turning the entire pond golden (pili).",
+    "audio": "Priya Kund is surrounded by Kadamba trees where pilgrims sit quietly reflecting on the pre-marital sweet bonds between Nandgaon and Barsana."
+  },
+  {
+    "id": "morkuti",
+    "name": "Mor Kuti (Peacock Dance Sanctum)",
+    "area": "Barsana",
+    "cats": [
+      "nature",
+      "temples"
+    ],
+    "h": 1,
+    "slot": "midday",
+    "timing": "6:00 AM - 6:30 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Comfortable stair-climbing footwear",
+    "image": "assets/radharani.jpg",
+    "note": "Hilltop pavilion where Radha and Krishna assumed peacock forms and danced together to the music of gathering monsoon rainclouds.",
+    "audio": "At Mor Kuti, hundreds of wild peacocks still gather every morning and evening, dancing gracefully around the hill shrine."
+  },
+  {
+    "id": "sanketvan",
+    "name": "Sanket Van",
+    "area": "Barsana",
+    "cats": [
+      "nature",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "midday",
+    "timing": "Open sunrise to 6:00 PM",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Modest walking clothing",
+    "image": "assets/ramanreti.jpg",
+    "note": "The mystical grove situated exactly halfway between Nandgaon and Barsana, where Radha and Krishna had their first romantic meeting by pre-arranged signal (sanket).",
+    "audio": "Sanket Van contains a scenic Kund and a quiet temple celebrating the eternal meeting of the divine couple."
+  },
+  {
+    "id": "premsarovar",
+    "name": "Prem Sarovar",
+    "area": "Barsana",
+    "cats": [
+      "ghats",
+      "nature"
+    ],
+    "h": 0.75,
+    "slot": "evening",
+    "timing": "Open sunrise to sunset",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Footwear removed on ghat steps",
+    "image": "assets/kusum-sarovar.jpg",
+    "note": "Sacred pond manifested from the divine tears of love shed by Radha and Krishna during an ecstatic trance of loving separation.",
+    "audio": "Surrounded by leafy groves and stone steps, Prem Sarovar is considered the liquid embodiment of transcendental divine love."
+  },
+  {
+    "id": "nandbhawan",
+    "name": "Nandgaon (Nand Bhawan Temple)",
+    "area": "Barsana",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 1.5,
+    "slot": "morning",
+    "timing": "5:30 AM - 12:00 PM, 4:30 PM - 8:30 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 20,
+    "dressCode": "Traditional attire",
+    "image": "assets/nandbhawan.jpg",
+    "note": "Hilltop palace fortress on Nandishwar Hill where Krishna lived with Nanda Baba and Yashoda from ages 6 to 10. Famous for festive Samaj Gayan.",
+    "audio": "Nandgaon is the village of Nanda Maharaja. The main temple houses charming deities of Krishna, Balarama, Nanda, Yashoda, and cowherd friends."
+  },
+  {
+    "id": "pavansarovar",
+    "name": "Pavan Sarovar",
+    "area": "Barsana",
+    "cats": [
+      "ghats",
+      "nature"
+    ],
+    "h": 0.75,
+    "slot": "midday",
+    "timing": "Open sunrise to sunset",
+    "crowd": "Low",
+    "waitTimeMin": 5,
+    "dressCode": "Casual modest attire",
+    "image": "assets/kusum-sarovar.jpg",
+    "note": "Sacred lake at the base of Nandishwar hill where Yashoda bathed Krishna after grazing cows. Sanatana Goswami resided here in a small bhajan kutir.",
+    "audio": "Pavan Sarovar is revered as one of the four principal lakes of Braj, celebrated for the evening coolness of its waters."
+  },
+  {
+    "id": "giriraj",
+    "name": "Govardhan Hill (Giriraj 21 km Parikrama)",
+    "area": "Govardhan",
+    "cats": [
+      "nature",
+      "temples"
+    ],
+    "h": 3.5,
+    "slot": "morning",
+    "timing": "Parikrama path open 24 hours (Best walked early morning or night)",
+    "crowd": "High",
+    "waitTimeMin": 20,
+    "dressCode": "Soft cotton socks or walking shoes",
+    "image": "assets/giriraj.jpg",
+    "note": "21 km sacred circumambulation of the holy hill lifted by 7-year-old Krishna on his left pinky finger for 7 days to shield Braj from Indra's torrential storm.",
+    "audio": "Govardhan Hill is non-different from Lord Krishna Himself. Completing the 21 km circuit brings deep spiritual fulfillment and peace."
+  },
+  {
+    "id": "danghati",
+    "name": "Shri Daan Ghati Mandir",
+    "area": "Govardhan",
+    "cats": [
+      "temples"
+    ],
+    "h": 1,
+    "slot": "morning",
+    "timing": "5:00 AM - 12:30 PM, 4:00 PM - 9:30 PM",
+    "crowd": "High",
+    "waitTimeMin": 25,
+    "dressCode": "Modest attire; milk pot offering counters outside",
+    "image": "assets/danghati.jpg",
+    "note": "The epicenter of Govardhan town where the deity of Giriraj Ji is naturally embedded in the roadside rock, anointed continuously with streams of fresh milk.",
+    "audio": "Daan Ghati marks where Krishna collected milk toll from the Gopis before permitting them to pass through the narrow hill path."
+  },
+  {
+    "id": "kusumsarovar",
+    "name": "Kusum Sarovar",
+    "area": "Govardhan",
+    "cats": [
+      "heritage",
+      "ghats"
+    ],
+    "h": 1.5,
+    "slot": "evening",
+    "timing": "Open sunrise to 7:00 PM",
+    "crowd": "Moderate",
+    "waitTimeMin": 10,
+    "dressCode": "Remove footwear on the stone terrace steps",
+    "image": "assets/kusum-sarovar.jpg",
+    "note": "Majestic 460-foot reservoir framed by ornate tiered red sandstone chhatris (cenotaphs) built in 1764 by Maharaja Jawahar Singh of Bharatpur in honor of Maharaja Suraj Mal.",
+    "audio": "Kusum Sarovar is adorned with painted ceiling frescoes depicting the pastimes of Krishna and the royal court of Bharatpur."
+  },
+  {
+    "id": "radhakund",
+    "name": "Radha Kund & Shyam Kund",
+    "area": "Govardhan",
+    "cats": [
+      "ghats",
+      "temples"
+    ],
+    "h": 1.5,
+    "slot": "morning",
+    "timing": "Open all day; Holy bathing during Bahulashtami at midnight",
+    "crowd": "High",
+    "waitTimeMin": 15,
+    "dressCode": "Traditional bathing attire; footwear strictly removed",
+    "image": "assets/radhakund.jpg",
+    "note": "The supreme sanctum of Gaudiya Vaishnavism. Twin sacred lakes created by Krishna (Shyam Kund) and Radha (Radha Kund) after slaying the Arishta bull demon.",
+    "audio": "Sri Chaitanya Mahaprabhu rediscovered Radha Kund in 1515. It is revered as the highest spiritual place in the entire material and spiritual universe."
+  },
+  {
+    "id": "jatipura",
+    "name": "Mukharbind Mandir (Jatipura)",
+    "area": "Govardhan",
+    "cats": [
+      "temples"
+    ],
+    "h": 1,
+    "slot": "evening",
+    "timing": "5:30 AM - 1:00 PM, 4:00 PM - 9:00 PM",
+    "crowd": "High",
+    "waitTimeMin": 20,
+    "dressCode": "Traditional clothing",
+    "image": "assets/giriraj.jpg",
+    "note": "The sacred mouth (Mukharbind) of Giriraj Maharaj in Jatipura, celebrated by Vallabhacharya devotees who offer Panchamrit, milk bhog, and grand 56-bhog Annakut.",
+    "audio": "At Mukharbind, devotees witness the miraculous stone face of Giriraj being lovingly anointed with hundreds of liters of fresh cow milk."
+  },
+  {
+    "id": "haridev",
+    "name": "Haridev Mandir",
+    "area": "Govardhan",
+    "cats": [
+      "temples",
+      "heritage"
+    ],
+    "h": 0.75,
+    "slot": "morning",
+    "timing": "6:00 AM - 12:00 PM, 4:30 PM - 8:30 PM",
+    "crowd": "Low",
+    "waitTimeMin": 10,
+    "dressCode": "Traditional attire",
+    "image": "assets/giriraj.jpg",
+    "note": "Ancient temple overlooking Manasi Ganga consecrated by Krishna's great-grandson Vajranabh, where Krishna holds Govardhan with his left hand.",
+    "audio": "Sri Chaitanya Mahaprabhu ran ecstatically to embrace Haridev upon reaching Govardhan, weeping tears of pure divine joy."
+  },
+  {
+    "id": "manasiganga",
+    "name": "Manasi Ganga Kund",
+    "area": "Govardhan",
+    "cats": [
+      "ghats",
+      "heritage"
+    ],
+    "h": 1,
+    "slot": "evening",
+    "timing": "Open 24 hours; Evening lighting",
+    "crowd": "Moderate",
+    "waitTimeMin": 10,
+    "dressCode": "Remove footwear on ghat steps",
+    "image": "assets/manasiganga.jpg",
+    "note": "The central lake of Govardhan manifested directly from Krishna's mind (manas) so his elderly parents would not have to travel all the way to Haridwar to bathe in Ganga.",
+    "audio": "Bathing in Manasi Ganga before beginning the Govardhan Parikrama grants a pilgrim the full benefit of bathing in Mother Ganga."
+  },
+  {
+    "id": "poochari",
+    "name": "Poochari Ka Lautha",
+    "area": "Govardhan",
+    "cats": [
+      "temples"
+    ],
+    "h": 0.75,
+    "slot": "midday",
+    "timing": "Open all day",
+    "crowd": "Moderate",
+    "waitTimeMin": 10,
+    "dressCode": "Casual comfortable attire",
+    "image": "assets/giriraj.jpg",
+    "note": "Marks the tail end of Govardhan hill where Krishna's friend Lautha Baba sits awaiting Krishna's return from Mathura. Devotees offer milk and dhoop.",
+    "audio": "Poochari Ka Lautha reflects the deep, unwavering friendship between Krishna and his dear cowherd companions."
+  }
+]
